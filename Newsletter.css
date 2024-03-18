@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-color: #36384D;
+    color: #36384D;
+    font-family: "Roboto";
+    line-height: 1.5;
+}
+
+.holder{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image{
+    height: 100%;
+    width: 45%;
+    padding: 20px 20px 20px 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 48px;
+    padding: 20px 20px 20px 30px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.h1-stay-updated{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.p-join{
+    margin-bottom: 32px;
+}
+
+.li-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.li-holder-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 42px;
+}
+
+.input-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.email-valid-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2-email{
+    font-size: 12px;
+}
+
+
+#invalid{
+    font-size: 12px;
+    color: tomato;
+}
+
+.input{
+    border: 1px solid hsl(231, 7%, 70%);
+    border-radius: 8px;
+    height: 54px;
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: "Roboto";
+}
+
+.error{
+    background-color: rgb(255, 231, 230);
+    border: 1.5px solid tomato;
+    outline: none;
+}
+
+.button{
+    background-color: tomato;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:hover{
+    transition: 0.2s;
+    background: tomato;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #36384D;
+
+}
+
+.popup {
+    background-color: white;
+    padding: 48px;
+    margin: 20px;
+    border-radius: 20px;
+    max-width: 450px;
+    line-height: 1;
+}
+
+#emailname{
+    font-weight: 700;
+}
+
+.success-thanks{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.success-paragraph{
+    margin: 32px 0;
+    line-height: 1.25;
+}
+
+@media (max-height: 630px),(max-width: 800px){
+
+    body{
+        justify-content: normal;
+    }
+
+    .main{
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .holder{
+        flex-direction: column;
+    }
+
+    .image{
+        content: url('images/illustration-sign-up-mobile.svg');
+        height: auto;
+        width: 100%;
+        padding: 0px 0px 30px 0;
+    }
+}
